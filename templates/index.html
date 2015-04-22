@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Landing Page - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="{{ STATIC_URL }}css/landing-page.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+
+    <!-- Custom Fonts -->
+
+    <style>
+
+#video-bg, .video-bg {
+
+   position:absolute;
+   width: auto;
+  height: auto;
+  z-index: -1100;
+
+}
+    </style>
+</head>
+
+<body>
+
+<div>
+
+    <div id="video-bg">
+        <video class="video-bg" muted autoplay loop poster="">
+            <source src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/send-money.mp4" type="video/mp4"/>
+        </video>
+    </div>
+
+</div>
+
+{#<video autoplay="autoplay" muted="muted" poster="none" repeat=true>#}
+{#    <source src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/send-money.mp4" type="video/mp4">#}
+{#    <source src="https://www.paypalobjects.com/webstatic/mktg/wright/videos/send-money.webm" type="video/webm">#}
+{#</video>#}
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about">О сервисе</a>
+                    </li>
+                    <li>
+                        <a href="#services">О Контуре</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Header -->
+    <a name="about"></a>
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1 style="color: #ffffff;">Экстерн – облегчает работу бухгалтера</h1>
+                        <h3 style="color: #ffffff;">Когда в компании есть Контур.Экстерн – время на чашку кофе остается больше</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <!-- Page Content -->
+
+	<a  name="services"></a>
+    <div class="content-section-a">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Отправляйте отчетность </br>быстро и без ошибок</h2>
+                    <p class="lead">Отчеты с первого раза, потому что встроенная система проверки отслеживает все возможные ошибки. Вы всегда в курсе сдачи отчета, писем или требования из контролирующих органов,  благодаря email- и SMS-оповещениям</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="{{ STATIC_URL }}img/first.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Оперативно реагируйте на </br>требования из налоговой</h2>
+                    <p class="lead">Оперативно получая и отвечая на требования, абоненты Контур.Экстерна сводят к минимуму возможность штрафов или же более серьёзных санкций.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="{{ STATIC_URL }}img/second.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Устраняйте расхождения по счетам-фактурам</h2>
+                    <p class="lead">Контур.Сверка позволит выявить как ошибки в реквизитах контрагентов, так и разногласия по датам, суммам и номерам счетов-фактур. Устранив расхождения до отправки декларации, вы сведете к минимуму риск доначисления НДС.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="{{ STATIC_URL }}img/third.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+ <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Получайте выписки из ЕГРЮЛ и ЕГРИП – в один клик</h2>
+                    <p class="lead">Через  Экстерн вы можете заказать выписку ЕГРЮЛ. Вам будут доступны основные данные о любом юридическом лице или индивидуальном предпринимателе в России.</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="{{ STATIC_URL }}img/4.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+<div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Акция! Пробуйте 3 месяца – бесплатно</h2>
+                    <p class="lead">Если Вы ранее не использовали сервис – отправляйте заявку и бользуйтесь бесплатно.</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="{{ STATIC_URL }}img/cat.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+<div class="container" style="padding-top: 50px">
+        <div class="row">
+                <div class="col-md-2"></div>
+            <div class="col-md-6">
+                        <noscript class="skb_form_script_disabled" style="color: red;">Для отображения формы заявки необходимо включить Javascript в вашем браузере и обновить страницу.</noscript>
+<script>
+    var _skbOrder = _skbOrder || [];
+    _skbOrder.push(['ProductId', '4F4028DE-C960-4D7F-B6B9-402BD0668673']);
+    _skbOrder.push(['SupplierUid', '91539634-e751-415b-932c-01adcde2f84d']);
+</script>
+<script src="//kontur.ru/widget/order/loader"></script>
+            </div>
+            <div class="col-md-2"></div>
+
+</br>
+
+</div>
+    <div class="row">
+    <div class="col-md-11">
+
+                <h2>Отзывы</h2>
+                <blockquote>
+                  <p>Наше предприятие на «Упрощёнке», поэтому пользовались Контур.Экстерном нечасто, но могу сказать, что это очень облегчает жизнь.</p>
+                  <small>Владимир<cite title="Source Title">ООО «ТАГ-инжиниринг»</cite></small>
+                </blockquote>
+    </div>
+</div>
+    <h2>Тарифные планы </h2>
+    <div class="row">
+        <div class="col-md-4">
+                                        <div class="panel panel-warning">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Индивидуальным</br> предпринимателям</h3>
+                              </div>
+                               <ul class="list-group">
+                                          <li class="list-group-item">
+
+                                           Отчетность в ФНС, ПФР, ФСС, Росстат
+                                          </li>
+                                          <li class="list-group-item">
+
+                                           Оценка вероятности проверки
+                                          </li>
+                                          <li class="list-group-item">
+
+                                             Финансовый анализ
+                                          </li>
+                                            <li class="list-group-item">
+
+                                              Выписки ЕГРЮЛ/ЕГРИП
+                                                  </li>
+                                            <li class="list-group-item">
+
+                                              Правовая база
+                                                  </li>
+                                        </ul>
+
+                                        <div class="panel-body">
+                              <span style="color: #F15600; font-size: 20px">от 1900 <span class="glyphicon glyphicon-rub"></span></span>  в год
+                                             </br><a href="#" class="btn btn-warning">Купить</a>
+                              </div></div>
+
+
+        </div>
+          <div class="col-md-4">
+                <div class="panel panel-warning">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Юридическим<br>
+			лицам</h3>
+                              </div>
+                               <ul class="list-group">
+                                          <li class="list-group-item">
+
+                                           Отчетность в ФНС, ПФР, ФСС, Росстат
+                                          </li>
+                                          <li class="list-group-item">
+
+                                           Оценка вероятности проверки
+                                          </li>
+                                          <li class="list-group-item">
+
+                                             Финансовый анализ
+                                          </li>
+                                            <li class="list-group-item">
+
+                                              Выписки ЕГРЮЛ/ЕГРИП
+                                                  </li>
+                                            <li class="list-group-item">
+
+                                              Правовая база
+                                                  </li>
+                                        </ul>
+
+                                        <div class="panel-body">
+                              <span style="color: #F15600; font-size: 20px">от 3200 <span class="glyphicon glyphicon-rub"></span></span>  в год
+                                             </br><a href="#" class="btn btn-warning">Купить</a>
+                              </div></div>
+          </div>
+                <div class="col-md-4">
+                      <div class="panel panel-warning">
+                              <div class="panel-heading">
+                                <h3 class="panel-title">Обслуживающим </br>бухгалтериям</h3>
+                              </div>
+                               <ul class="list-group">
+                                          <li class="list-group-item">
+
+                                           Отчетность в ФНС, ПФР, ФСС, Росстат
+                                          </li>
+                                          <li class="list-group-item">
+
+                                           Оценка вероятности проверки
+                                          </li>
+                                          <li class="list-group-item">
+
+                                             Финансовый анализ
+                                          </li>
+                                            <li class="list-group-item">
+
+                                              Выписки ЕГРЮЛ/ЕГРИП
+                                                  </li>
+                                            <li class="list-group-item">
+
+                                              Правовая база
+                                                  </li>
+                                        </ul>
+
+                                        <div class="panel-body">
+                              <span style="color: #F15600; font-size: 20px">от 8900 <span class="glyphicon glyphicon-rub"></span></span>  в год
+                                             </br><a href="#" class="btn btn-warning">Купить</a>
+                              </div></div>
+                </div>
+</div>
+    </div>
+
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about">О сервисе</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">О Контуре</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small"><a href="https://kontur.ru/partnership/online">Партнерская сеть</a> ЗАО ПФ СКБ Контур  &copy;  2015г.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{{ STATIC_URL }}js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
